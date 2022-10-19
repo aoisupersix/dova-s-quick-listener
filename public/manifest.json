@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "DOVA-SYNDROME Quick Listener",
+  "description": "DOVA-SYNDROMEの音楽素材の再生を簡単にする拡張",
+  "version": "0.0.1",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://dova-s.jp/bgm",
+        "https://dova-s.jp/bgm?*",
+        "https://dova-s.jp/bgm/?*",
+        "https://dova-s.jp/bgm/index.html",
+        "https://dova-s.jp/bgm/index.html?*",
+        "https://dova-s.jp/bgm/index.html/?*"
+      ],
+      "js": [
+        "js/content.js"
+      ]
+    }
+  ]
+}
