@@ -27,14 +27,6 @@ module.exports = merge(common, {
                 {
                     from: path.join('public', 'manifest.json'),
                     to: path.join('..', 'manifest.json'),
-                    transform(content) {
-                        const json = JSON.parse(content.toString());
-                        json['background'] = {
-                            service_worker: 'js/background.js'
-                        };
-
-                        return JSON.stringify(json, null, 2);
-                    },
                     force: true,
                 }
             ],
