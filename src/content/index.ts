@@ -1,6 +1,8 @@
 // 開発時のホットリロード用
 // 本番ビルドでは処理は実行されない
 import 'mv3-hot-reload/content'
+import { FetchMusicMessage } from '../models/messages/fetch-music/fetch-music-message'
+import { FetchMusicResponse } from '../models/messages/fetch-music/fetch-music-response'
 
 const audioElements: HTMLAudioElement[] = []
 
@@ -18,6 +20,14 @@ document.querySelectorAll('#itemList dl.item').forEach((item) => {
 
         item.appendChild(audio)
         audioElements.push(audio)
+
+        const message: FetchMusicMessage = {
+            type: 'FetchMusic',
+            url: 'https://dova2.heteml.net/dova/mp3/17593.mp3',
+        }
+        chrome.runtime.sendMessage(message, (response: FetchMusicResponse) => {
+            console.log(response)
+        })
     }
 })
 

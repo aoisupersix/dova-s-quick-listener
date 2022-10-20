@@ -23,5 +23,8 @@
   ],
   "background": {
     "service_worker": "js/background.js"
-  }
+  },
+  "host_permissions": [
+    "https://dova2.heteml.net/"
+  ]
 }
