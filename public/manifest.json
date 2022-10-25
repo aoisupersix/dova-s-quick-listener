@@ -11,11 +11,9 @@
   "content_scripts": [
     {
       "matches": [
-        "https://dova-s.jp/bgm",
-        "https://dova-s.jp/bgm?*",
+        "https://dova-s.jp/bgm/",
         "https://dova-s.jp/bgm/?*",
-        "https://dova-s.jp/bgm/index.html",
-        "https://dova-s.jp/bgm/index.html?*",
+        "https://dova-s.jp/bgm/index.html/",
         "https://dova-s.jp/bgm/index.html/?*"
       ],
       "js": [
