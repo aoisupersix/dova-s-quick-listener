@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/aoisupersix/dova-s-quick-listener#readme",
   "devDependencies": {
-    "@types/chrome": "0.0.236",
+    "@types/chrome": "0.0.237",
     "@types/jest": "^29.2.0",
     "@typescript-eslint/eslint-plugin": "^5.40.1",
     "@typescript-eslint/parser": "^5.40.1",
